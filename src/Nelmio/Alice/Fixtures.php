@@ -11,6 +11,10 @@
 
 namespace Nelmio\Alice;
 
+if (!defined('GLOB_BRACE')) {
+	define ('GLOB_BRACE', 0);
+}
+
 use Doctrine\Common\Persistence\ObjectManager;
 use Nelmio\Alice\Persister\Doctrine;
 use Psr\Log\LoggerInterface;
